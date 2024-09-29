@@ -1,90 +1,155 @@
-*,html, body {
-    margin: 0;
-    padding: 0;
-    font-family: "roboto", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-/* STYLE NAVIGATION BAR */
-.container-navbar {
-    display: flex;
-    width: 100%;
-    height: 100vh;
+:root {
+  --primary: #62dddd;
+  --bg: #010101;
+  --font: #31b83e;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-.whapper {
-    display: flex;
-    justify-content: space-between ;
-    align-items: center;
-    font-size: 20px;
-    padding: 15px;
-    width: 100%;
-    height: 92px;
-    background-color: #D9D9D9;
-    box-shadow: 0 7px 15px 0 rgba(0,0,0,0.5);
+body {
+  background: var(--bg);
+  color: #fff;
 }
 
+#header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(/sentra-wyataguna/img/wyataGuna.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+/* General container */
+.container {
+  padding: 10px 7%;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 9999;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 7%;
+  border-bottom: 1px solid var(--font);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo styling */
 .logo {
-    list-style-type: none;
-    margin: 20px;
+  height: 50px;
+  margin-right: 10px;
 }
 
-.logo-navbar {
-    height: 50%;
-    width: 50%;
-    border-radius: 30%;
+/* Title styling */
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: var(--font);
+  text-decoration: none;
 }
 
-.brand {
-    list-style-type: none;
-    font-size: 2em;
+/* Right side of the navbar (menu) */
+.navbar-right {
+  display: flex;
+  list-style: none;
+  font-weight: bold;
 }
 
-.firstname {
-    color: #31B83E;
-    font-weight: 700;
+.navbar-right li {
+  margin-left: 40px;
 }
 
-.lastname {
-    color: #31B83E;
-    font-weight: 700;
+.navbar-right a {
+  text-decoration: none;
+  color: var(--font); /* Warna link */
+  font-size: 18px;
+  position: relative;
+}
+.navbar-right li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: var(--font);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
 }
 
-.ul-navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    font-size: 2em;
-    color: 31B83E;
-    
+.navbar-right li a:hover::after {
+  width: 100%;
 }
 
-.a-navbar {
-    color: #31B83E;
-    padding: 20px;
-    font-weight: 700;
-    font-size: 1,5em;
-    text-decoration: none;
-    
+/* Header text styling */
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+.header-text img {
+  padding: 10px 0;
 }
 
-.a-navbar:hover {
-    color: white;
-    background-color: #31B83E;
-    padding: 15px;
-    border-radius: 30%;
-    transition: all .5s ease-in-out;
-
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.header-text p {
+  margin-bottom: 50px;
 }
 
-/* END STYLE NAVIGATION BAR */
+.btn {
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+  width: fit-content;
+  border: 1px solid var(--font);
+  padding: 5px 70px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--font);
+  transition: background 0.5s;
+}
+.btn:hover {
+  background: var(--font);
+  color: #fff;
+}
 
-/* STYLE CONTENT */
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.container-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 4em;
+  .navbar-right {
+    flex-direction: column;
+    margin-top: 10px;
+  }
 
+  .navbar-right li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
