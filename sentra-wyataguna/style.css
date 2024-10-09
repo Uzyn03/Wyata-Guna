@@ -22,11 +22,11 @@ body {
 #header {
   width: 100%;
   min-height: 100vh;
-  background-image: url(/Wyata-Guna/sentra-wyataguna/img/wyataGuna.jpg);
+  background-image: url(/sentra-wyataguna/img/wyataGuna.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1)
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
 }
 
 /* General container */
@@ -147,7 +147,7 @@ body {
   /* background-position: center; */
   position: relative;
 }
-.container-about{
+.container-about {
   padding: 2.7em;
 }
 .tentang-kami h1 {
@@ -198,14 +198,14 @@ body {
 }
 
 /* Layanan */
-#layanan{
+#layanan {
   /* background-image: url(/sentra-wyataguna/img/bglayanan.png); */
   background-size: cover;
   /* background-position: center; */
   padding: 2.7em;
 }
 
-.layananKami h1{
+.layananKami h1 {
   color: var(--font);
   text-align: center;
   padding: 10px 10px;
@@ -220,7 +220,7 @@ body {
   margin-bottom: 5rem;
 }
 
-.pilihanLayanan{
+.pilihanLayanan {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
@@ -229,41 +229,39 @@ body {
   text-align: center;
 }
 
-
-.pendidikan{
+.pendidikan {
   background-color: #eab308;
   margin: 10px;
   border-radius: 10px;
-  padding:10px;
+  padding: 10px;
 }
-h4{
+h4 {
   padding: 10px 10px;
   margin-bottom: 10px;
 }
-.pilihanLayanan p{
+.pilihanLayanan p {
   margin-top: 20px;
 }
 .konseling {
-  background-color: #08DB11;
+  background-color: #08db11;
   margin: 10px;
   border-radius: 10px;
-  padding:10px;
+  padding: 10px;
 }
 .ekonomi {
-  background-color: #0971EB;
+  background-color: #0971eb;
   margin: 10px;
   border-radius: 10px;
-  padding:10px;
+  padding: 10px;
 }
 
 section {
 }
 .layanan2 {
   padding: 2.7em;
-
 }
-.layanan2 p{
-  padding:0 6rem;
+.layanan2 p {
+  padding: 0 6rem;
   color: #010101;
   text-align: center;
   font-size: 1.7rem;
@@ -274,19 +272,15 @@ section {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.asrama img{
+.asrama img {
   width: 100%;
 }
-.asrama h5{
+.asrama h5 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 1.2rem;
   color: #010101;
 }
-
-
-
-
 
 /* Responsive design */
 /* tablet */
