@@ -288,7 +288,7 @@ h4 {
 /* Kegiatan */
 #kegiatan {
   min-height: 630px;
-  padding: 1rem;
+  padding: 4rem 1rem;
 }
 .atas{
   text-align:center;
@@ -309,7 +309,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 2rem 8rem;
+  padding: 2rem 1rem;
 }
 
 .kegiatan img{
@@ -318,7 +318,18 @@ h4 {
   margin: 0 9rem;
 }
 .kegiatan p{
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #010101;
+  text-align: center;
+}
+.galeri img {
+  width: 400px;
+  height: 216px;
+  margin: 0 0rem;
+}
+.galeri h5{
+  margin-bottom: 1rem;
   font-size: 1rem;
   color: #010101;
   text-align: center;
