@@ -128,7 +128,7 @@ body {
   font-size: 24px;
   width: fit-content;
   border: 1px solid var(--font);
-  padding: 5px 70px;
+  padding: 5px 36px;
   border-radius: 10px;
   text-decoration: none;
   background: #fff;
@@ -155,7 +155,7 @@ body {
   text-align: center;
   padding: 10px 10px;
   margin-bottom: 10px;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .tentang-kami p {
@@ -165,7 +165,7 @@ body {
 }
 
 .visi h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: var(--font);
   text-align: flex-start;
   padding: 10px 10px;
@@ -179,7 +179,7 @@ body {
 }
 
 .misi h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: var(--font);
   text-align: flex-start;
   padding: 10px 10px;
@@ -276,6 +276,7 @@ h4 {
 .asrama img {
   width: 400px;
   height: 216px;
+  
 }
 .asrama h5 {
   text-align: center;
@@ -283,6 +284,46 @@ h4 {
   font-size: 1rem;
   color: #010101;
 }
+
+/* Kegiatan */
+#kegiatan {
+  min-height: 630px;
+  padding: 1rem;
+}
+.atas{
+  text-align:center;
+}
+.atas h5 {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.atas h1{
+  color: var(--font);
+  text-align: center;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+}
+.listKegiatan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem 8rem;
+}
+
+.kegiatan img{
+  width: 4rem;
+  height: 4rem;
+  margin: 0 9rem;
+}
+.kegiatan p{
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #010101;
+  text-align: center;
+}
+
 
 /* Responsive design */
 /* tablet */
