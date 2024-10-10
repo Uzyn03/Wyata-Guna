@@ -276,7 +276,6 @@ h4 {
 .asrama img {
   width: 400px;
   height: 216px;
-  
 }
 .asrama h5 {
   text-align: center;
@@ -290,15 +289,15 @@ h4 {
   min-height: 630px;
   padding: 4rem 1rem;
 }
-.atas{
-  text-align:center;
+.atas {
+  text-align: center;
 }
 .atas h5 {
   color: #000;
   font-size: 1.2rem;
 }
 
-.atas h1{
+.atas h1 {
   color: var(--font);
   text-align: center;
   padding: 10px 10px;
@@ -312,12 +311,12 @@ h4 {
   padding: 2rem 1rem;
 }
 
-.kegiatan img{
+.kegiatan img {
   width: 4rem;
   height: 4rem;
   margin: 0 9rem;
 }
-.kegiatan p{
+.kegiatan p {
   margin-bottom: 1rem;
   font-size: 1rem;
   color: #010101;
@@ -328,13 +327,87 @@ h4 {
   height: 216px;
   margin: 0 0rem;
 }
-.galeri h5{
+.galeri h5 {
   margin-bottom: 1rem;
   font-size: 1rem;
   color: #010101;
   text-align: center;
 }
 
+/* kontak */
+.atas p {
+  color: #000;
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+footer {
+  padding: 2rem 4rem;
+  color: #fff;
+  background: linear-gradient(163deg, #0971eb 0%, #31b83e 60%);
+}
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-left h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.footer-right p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.contact-icons {
+  margin-bottom: 5px;
+}
+.contact-icons a {
+  padding: 0 15px;
+}
+
+.contact-icons img {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.5s;
+}
+.contact-icons img:hover {
+  transform: translateY(-5px);
+  filter: brightness(0) saturate(20%) invert(90%) sepia(50%) saturate(500%)
+    hue-rotate(100deg) brightness(1.5);
+}
+
+.strip {
+  background-color: #010101;
+  width: 13.2rem;
+  border: 2px solid #d9d9d9;
+}
+.strip2 {
+  background-color: #010101;
+  width: 19rem;
+  border: 2px solid #d9d9d9;
+}
+.strip3 {
+  background-color: #010101;
+  width: 21.3rem;
+  border: 2px solid #d9d9d9;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-list a {
+  color: #fff;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+}
+.footer-list a:hover {
+  color: #022c22;
+}
 
 /* Responsive design */
 /* tablet */
