@@ -109,8 +109,10 @@ body {
   margin-top: 20%;
   font-size: 24px;
 }
-.header-text img {
-  padding: 10px 0;
+.stripAtas {
+  background-color: #d9d9d9;
+  width: 21.3rem;
+  height: 0.7rem;
 }
 
 .header-text h1 {
@@ -390,7 +392,7 @@ footer {
   border: 2px solid #d9d9d9;
 }
 .strip3 {
-  background-color: #010101;
+  color: #010101;
   width: 21.3rem;
   border: 2px solid #d9d9d9;
 }
@@ -411,7 +413,7 @@ footer {
 
 /* Responsive design */
 /* tablet */
-@media (max-width: 1160px) {
+@media (max-width: 960px) {
   html {
     font-size: 62.5%;
   }
@@ -438,10 +440,10 @@ footer {
     font-size: 4rem;
   }
   #about h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   #about p {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 
@@ -449,5 +451,11 @@ footer {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+  .asrama img {
+    width: 95%;
+  }
+  .galeri img {
+    width: 95%;
   }
 }
