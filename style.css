@@ -22,7 +22,7 @@ body {
 #header {
   width: 100%;
   min-height: 100vh;
-  background-image: url(img/wyataGuna.jpg);
+  background-image: url(img/sentra.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -100,7 +100,7 @@ body {
 .navbar-right li a:hover::after {
   width: 100%;
 }
-#menu {
+.navbar-extra {
   display: none;
 }
 
@@ -122,6 +122,15 @@ body {
 }
 .header-text p {
   margin-bottom: 50px;
+}
+#header::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+  background: linear-gradient(0deg, #fafafa 3%, rgba(1,1,1,0) 30%);
 }
 
 .btn {
@@ -417,8 +426,11 @@ footer {
   html {
     font-size: 62.5%;
   }
-  #menu {
+  .navbar-extra {
     display: inline-block;
+  }
+  #close {
+    display: none;
   }
   .navbar .navbar-right {
     position: absolute;
