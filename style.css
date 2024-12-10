@@ -9,6 +9,7 @@
 :root {
   --font: #16a34a;
   --bg: #fff;
+  --teks: #475569;
 }
 html {
   scroll-behavior: smooth;
@@ -172,7 +173,7 @@ body {
 .tentang-kami p {
   /* background-color: var(--font); */
   font-size: 1.2rem;
-  color: #010101;
+  color: var(--teks);
 }
 
 .visi h1 {
@@ -186,7 +187,7 @@ body {
 .visi p {
   /* background-color: var(--font); */
   font-size: 1.2rem;
-  color: #010101;
+  color: var(--teks);
 }
 
 .misi h1 {
@@ -200,10 +201,10 @@ body {
 .misi p {
   /* background-color: var(--font); */
   font-size: 1.2rem;
-  color: #010101;
+  color: var(--teks);
 }
 .misi ol {
-  color: #010101;
+  color: var(--teks);
   padding-left: 14px;
   font-size: 1.2rem;
 }
@@ -232,7 +233,7 @@ body {
 }
 
 .layananKami p {
-  color: #010101;
+  color: var(--teks);
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 5rem;
@@ -253,9 +254,49 @@ body {
   margin-bottom: 10px;
   font-size: 1.8rem;
 }
-#layanan1 ol {
-  color: #010101;
-  font-size: 1.2rem;
+.services {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+}
+
+.services-title {
+  font-size: 1.8em;
+  color: #28a745;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-list li {
+  margin: 10px 0;
+  padding: 10px;
+  background: #f0f4f8;
+  border-left: 4px solid #28a745;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s;
+  color: var(--teks);
+}
+
+.services-list li:hover {
+  background: #bbf7d0;
+}
+
+.number {
+  font-size: 1.2em;
+  color: #28a745;
+  margin-right: 10px;
+  font-weight: bold;
 }
 
 .pendidikan {
@@ -290,7 +331,7 @@ h4 {
 }
 .layanan2 p {
   padding: 0 6rem;
-  color: #010101;
+  color: var(--teks);
   text-align: center;
   font-size: 1.2rem;
 }
@@ -317,21 +358,21 @@ h4 {
   margin-bottom: 10px;
   font-size: 1.8rem;
 }
-.layananTop h4{
+.layananTop h4 {
   color: #374151;
   text-align: center;
   padding: 10px 10px;
   margin-bottom: 10px;
   font-size: 1.4rem;
 }
-.layananBottom p{
-  color: #010101;
+.layananBottom p {
+  color: var(--teks);
   font-size: 1.2rem;
 }
-.layananBottom ol{
-  color: #010101;
+.layananBottom ol {
+  color: var(--teks);
   font-size: 1.2rem;
-  padding: 12px ;
+  padding: 12px;
 }
 
 /* Kegiatan */
@@ -369,7 +410,7 @@ h4 {
 .kegiatan p {
   margin-bottom: 1rem;
   font-size: 1rem;
-  color: #010101;
+  color: var(--teks);
   text-align: center;
 }
 .galeri img {
@@ -386,7 +427,7 @@ h4 {
 
 /* kontak */
 .atas p {
-  color: #000;
+  color: var(--teks);
   font-size: 1.2rem;
   margin-bottom: 4rem;
 }
