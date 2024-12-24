@@ -198,15 +198,40 @@ body {
   margin-bottom: 10px;
 }
 
-.misi p {
-  /* background-color: var(--font); */
-  font-size: 1.2rem;
-  color: var(--teks);
+/* Reset default list styling */
+.mission-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.misi ol {
+
+/* Style untuk setiap item misi */
+.mission-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Style untuk icon */
+.mission-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Style khusus untuk SVG */
+.mission-icon svg {
+  width: 100%;
+  height: 100%;
+  color: #000;
+}
+
+/* Style untuk teks misi */
+.mission-text {
+  flex: 1;
   color: var(--teks);
-  padding-left: 14px;
-  font-size: 1.2rem;
 }
 #about a {
   margin: 1em 0;
@@ -257,9 +282,9 @@ body {
 .services {
   max-width: 600px;
   margin: 0 auto;
-  background: #ffffff;
+  background: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
   padding: 20px 30px;
 }
 
@@ -380,6 +405,15 @@ h4 {
   min-height: 630px;
   padding: 4rem 1rem;
 }
+.kegiatan:hover {
+  cursor: pointer;
+  background-color: #e2e8f0;
+  border-radius: 10px;
+}
+/* Animasi flash */
+.clicked {
+  animation: flash 0.2s ease-in-out;
+}
 .atas {
   text-align: center;
 }
@@ -399,13 +433,19 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
+}
+/* Efek ketika diklik */
+.kegiatan:active {
+  transform: scale(0.95);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  background-color: #ffe4b5;
 }
 
 .kegiatan img {
   width: 4rem;
   height: 4rem;
-  margin: 0 9rem;
+  margin: 0 5rem;
 }
 .kegiatan p {
   margin-bottom: 1rem;
